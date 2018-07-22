@@ -1,9 +1,6 @@
 import React from 'react';
 import MainContent from '../components/mainContent';
 import Sidebar from '../components/sidebar';
-import { library } from '@fortawesome/fontawesome-svg-core'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faGoogle } from '@fortawesome/free-solid-svg-icons'
 
 class IndexPage extends React.Component {
   constructor(props) {
@@ -13,8 +10,7 @@ class IndexPage extends React.Component {
     };
   }
 
-  ComponentWillMount() {
-    library.add(faGoogle);
+  ComponentDidMount() {
   }
 
 
@@ -35,9 +31,16 @@ class IndexPage extends React.Component {
           body {
             margin: 0px;
             height: 100vh;
-
+            font-family: Roboto;
+          }
+          a {
+            display: block;
           }
           `}</style>
+          <head>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+            <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" />
+          </head>
         <Sidebar></Sidebar>
         <MainContent></MainContent>
       </div>

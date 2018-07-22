@@ -1,8 +1,6 @@
 import React from 'react';
 import axios from 'axios';
 import cookie from 'react-cookie';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-
 
 
 class MainContent extends React.Component {
@@ -57,7 +55,7 @@ we would use react-cookie to access the user's token with: cookie.load('connect.
             width: 100%;
             max-width: 1600px;
             min-height: 100vh;
-            padding: 50px 72px 0;
+            padding: 48px 72px 0;
             background: #F6F9FC;
             z-index: 10;
           }
@@ -83,14 +81,32 @@ we would use react-cookie to access the user's token with: cookie.load('connect.
             align-items: center;
             cursor: pointer;
           }
+          .dash-title-text {
+            margin-right: 10px;
+          }
+          .to-dashboard {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            color: rgb(187, 187, 187);
+            text-decoration: none;
+          }
+          .dashboard-dash {
+            margin-right: 10px;
+            font-size: 40px;
+          }
           `}
         </style>
         <div className="flex-center">
-          <div className="page-title">Search</div>
+          <a href="https://publist.ai/nickboccuzzi/reports" className="to-dashboard">
+            <i className="fa fa-angle-left dashboard-dash"></i>
+            <div className="dashboard-text">Dashboard</div>
+          </a>
           <div className="flex-one"></div>
           <div className="dash-title">
-            <div>Current User</div>
-            <FontAwesomeIcon prefix="fa" icon="google" />
+            <div className="dash-title-text">Current User</div>
+            <i className="fa fa-angle-down "></i>
           </div>
         </div>
       </div>
