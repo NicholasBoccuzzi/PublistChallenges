@@ -1,0 +1,35 @@
+{
+  "name": "PublistChallenges",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "next": "next start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NicholasBoccuzzi/PublistChallenges.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NicholasBoccuzzi/PublistChallenges/issues"
+  },
+  "homepage": "https://github.com/NicholasBoccuzzi/PublistChallenges#readme",
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.0-14",
+    "@fortawesome/free-solid-svg-icons": "^5.1.0-11",
+    "@fortawesome/react-fontawesome": "0.1.0-11",
+    "axios": "^0.18.0",
+    "fontfaceobserver": "^2.0.13",
+    "i": "^0.3.6",
+    "next": "^6.1.1",
+    "npm": "^6.2.0",
+    "react": "^16.4.1",
+    "react-cookie": "^2.2.0",
+    "react-dom": "^16.4.1"
+  }
+}
