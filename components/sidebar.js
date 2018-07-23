@@ -1,20 +1,15 @@
-import React from 'react';
+import React from "react";
 
 class Sidebar extends React.Component {
-  constructor(props){
+  constructor(props) {
     super(props);
-
-    this.state = {
-
-    }
+    this.state = {};
   }
 
-  ComponentDidMount() {
+  ComponentDidMount() {}
 
-  }
-
-  render () {
-    return(
+  render() {
+    return (
       <div className="sidebar-container">
         <style jsx>{`
           .sidebar-container {
@@ -22,13 +17,12 @@ class Sidebar extends React.Component {
             display: flex;
             flex-direction: row;
             height: auto;
-            box-shadow: 0.5px 0 2px 0 #f0f3f4;
             min-width: 94px;
             min-height: 100vh;
             z-index: 20;
           }
           .center {
-            display: flex;
+            display: block;
             text-align: center;
             justify-content: center;
             margin: 0 auto;
@@ -42,11 +36,14 @@ class Sidebar extends React.Component {
             margin-top: 50px;
           }
           .sidebar-sticky {
-            position: absolute;
-            width: 100%;
-          }
-          .sticky {
             position: fixed;
+            max-width: 94px;
+            min-height: 100vh;
+            width: 100%;
+            top: 0px;
+            left: 0px;
+            background: white;
+            box-shadow: 0.5px 0 2px 0 #f0f3f4;
           }
           .cog-container {
             font-size: 18px;
@@ -60,22 +57,23 @@ class Sidebar extends React.Component {
             margin-top: 190px;
             color: black;
           }
-          `}</style>
-          <div className="sidebar-sticky center">
-            <div className="sticky">
-              <a href="https://publist.ai/reports" className="logo logo-container">
-                <img src={require("../.next/static/logo-dark.svg")} />
-              </a>
-              <a href="https://publist.ai/reports" className="home-container">
-                <i className="fa fa-home"></i>
-              </a>
-              <a href="https://publist.ai/settings" className="cog-container">
-                <i className="fa fa-cog"></i>
-              </a>
-            </div>
-          </div>
+        `}</style>
+        <div className="sidebar-sticky center">
+          <a
+            href="https://publist.ai/reports"
+            className="logo logo-container"
+          >
+            <img src={require("../.next/static/logo-dark.svg")} />
+          </a>
+          <a href="https://publist.ai/reports" className="home-container">
+            <i className="fa fa-home" />
+          </a>
+          <a href="https://publist.ai/settings" className="cog-container">
+            <i className="fa fa-cog" />
+          </a>
+        </div>
       </div>
-    )
+    );
   }
 }
 
