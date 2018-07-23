@@ -35,6 +35,12 @@ class IndexPage extends React.Component {
           }
           a {
             display: block;
+            color: black;
+            text-decoration: none;
+          }
+          a:hover {
+            color: rgb(163,163,163);
+            text-decoration: underline;
           }
           `}</style>
           <head>
