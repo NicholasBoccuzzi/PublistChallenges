@@ -130,14 +130,14 @@ class SearchContainer extends React.Component {
             width: 100%;
             max-width: 300px;
             text-align: center;
-            border-bottom: 1px solid white;
+            border-bottom: 1px solid black;
           }
           .search-input:hover {
-            border-bottom: 1px solid black;
+            border-bottom: 2px solid black;
           }
           .search-input:focus {
             outline: none;
-            border-bottom: 1px solid black;
+            border-bottom: 2px solid black;
           }
           .search-result-container {
             margin: 30px;

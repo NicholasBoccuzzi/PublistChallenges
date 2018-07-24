@@ -39,3 +39,10 @@ This page replicates the current styling of Publist.ai. It is a pretty yet simpl
 ### How to read the Styling
 
 It turned out that Next.js is not very friendly with CSS files, so all styling was done using the recommended ```<style jsx>``` tags inside of each render method.
+
+### Images
+1. Page Layout with Search results
+![Hovering over search result](https://i.imgur.com/eAzmuka.png)
+
+2. General Page Layout (Modal Open & No Search)
+![Page Layout](https://i.imgur.com/7y3BhJK.png)
