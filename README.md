@@ -3,12 +3,13 @@ Thanks for the opportunity to complete this coding challenge. As requested, I ha
 Additionally, I have installed a few more npm packages to assist in making my final webpage possible
 
 ## npm packages
-1. react
-2. next
-3. react-dom
-4. axios -- used to make the http request to Publist api and retrieve the data
-5. react-cookie -- access's the browser's cookies for the auth token
-6. next-images -- used to access the publist SVG icon, check ```./next.config.js```
+1. [react](https://www.npmjs.com/package/react)
+2. [next](https://www.npmjs.com/package/next)
+3. [react-dom](https://www.npmjs.com/package/react-dom)
+4. [axios](https://www.npmjs.com/package/axios) -- used to make the http request to Publist api and retrieve the data
+5. [react-cookie](https://www.npmjs.com/package/react-cookie) -- access's the browser's cookies for the auth token
+6. [next-images] -- used to access the publist SVG icon, check ```./next.config.js```
+7. [prettier](https://www.npmjs.com/package/prettier)
 
 ## Type of Token
 In the instructions, it was asked what the type of token we are accessing is called. The answer is: **JWT Token**
