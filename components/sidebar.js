@@ -63,7 +63,7 @@ class Sidebar extends React.Component {
             href="https://publist.ai/reports"
             className="logo logo-container"
           >
-            <img src={require("../.next/static/logo-dark.svg")} />
+            <img src={require("../assets/logo-dark.svg")} />
           </a>
           <a href="https://publist.ai/reports" className="home-container">
             <i className="fa fa-home" />

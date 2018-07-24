@@ -7,7 +7,8 @@ class SearchResult extends React.Component {
       url: props.url,
       image: props.image,
       title: props.title,
-      description: props.description
+      description: props.description,
+      name: props.name,
     };
   }
 
@@ -78,6 +79,7 @@ class SearchResult extends React.Component {
             <img className="article-image" src={this.state.image} />
           </div>
           <section className="article-text-container">
+            <div className="article-description">{this.state.name}</div>
             <div className="article-title">{this.state.title}</div>
             <div className="article-description">{this.state.description}</div>
           </section>

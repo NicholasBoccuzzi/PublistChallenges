@@ -86,6 +86,7 @@ class SearchContainer extends React.Component {
         description={article.description}
         title={article.title}
         url={article.url}
+        name={article.site.name}
       />
     );
   }
