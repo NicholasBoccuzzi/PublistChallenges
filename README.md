@@ -24,6 +24,33 @@ Next.js allows for deployment to a local server. Setting this up is relatively q
 
 Using React's ```componentDidMount```, an HTTP request is sent to the provided api url using the npm package, **axios**. Axios is friendly with both Next and React. In this project, my personal auth token is used to query Publist's data. In reality, we would use the installed npm package, **React Cookie**, to retrieve the current user's token stored in the browser cookies. Then send this request with the proper auth details.
 
+Sample Code Below:
+
+```
+componentDidMount() {
+  if (this.token == "") {
+    this.token = cookie.load("connect.sid");
+  }
+
+  axios({
+    method: "post",
+    url: "https://publist.ai/api/v2/jobs.frontend",
+    headers: {
+      Authorization: `Bearer-${this.token}`,
+      "Content-type": "application/json"
+    },
+    data: {
+      query: "hi"
+    }
+  }).then(response => {
+    this.setState({
+      data: response.data.data
+    });
+  });
+}
+```
+
+
 ### News Filtering
 
 Users input keywords into the search bar. If the keyword is found in either an article's description or title, it is added to a list of approved articles. This list is kept track of in the React component state and is continuously re-rendered when changes are made to the search.
